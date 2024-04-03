@@ -4,12 +4,15 @@ import Musiccard from './components/Musiccard'
 import UseState from './learning/UseState'
 import UseStateArr from './learning/UseStateArr'
 import UseStateBG from './learning/UseStateBG'
+import Props from './learning/Props'
 
 const App = () => {
-  const [val, setVal] = useState([1, 2, 3, 4, 5, 6]);
-  return (
 
-        <UseStateBG></UseStateBG>
+  return (
+      <div className='w-full h-screen flex items-center justify-center bg-slate-900'>
+          <Props > </Props>
+      </div>
+        
 
     
   )
