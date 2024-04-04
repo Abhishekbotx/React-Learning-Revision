@@ -15,8 +15,8 @@ function Props() {
     const [realVal, setRealVal] = useState(data);
     
     const clickhandle = (changeIndex) => {
-        setRealVal((previous) => {
-            return previous.map((item, index) => {
+        setRealVal((previous) => { //using the data i.e also previous val in useState
+            return previous.map((item, index) => {//uspe bss ye function chala rhe hum
                 if (index === changeIndex) { 
                     return { ...item, friends: !item.friends } };
                 return item;
