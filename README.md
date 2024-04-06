@@ -9,3 +9,8 @@
 3. Handling Events inside /src/components/Musiccards.jsx
 
 4. made 3 small projects to deep dive into useState hook
+
+5. learnt about form handline using 
+                i.useRef 
+                ii.controlledComponent and 
+                iii.react-hook-form library by making small projects
