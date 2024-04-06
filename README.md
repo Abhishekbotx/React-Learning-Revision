@@ -11,6 +11,13 @@
 4. made 3 small projects to deep dive into useState hook
 
 5. learnt about form handline using 
+
                 i.useRef 
                 ii.controlledComponent and 
                 iii.react-hook-form library by making small projects
+
+6. learnt about Routing using react-router-dom package                
+
+                i.Link
+                ii.NavLink :•This offers Styling {both components are part of react-router-dom}
+                            •learnt styling using different ways
