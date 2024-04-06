@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import MusicCard2 from '../components/MusicCard2'
-import Navbar from '../components/Navbar';
+import MusicCard2 from '../../components/MusicCard2'
+import Navbar from '../../components/Navbar';
 const data = [
     { image: "https://c.saavncdn.com/896/Hawayein-Official-Remix-by-DJ-Shilpi-Sharma-From-Jab-Harry-Met-Sejal--Hindi-2017-20170811050325-500x500.jpg",Name:"Hawayein", Artist: "Abhishek", Added: false },
     { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpYt1Q7QAR2nZYQ_lKIcTFZsasymOBigZGQNpQTVNj0Q&s",Name:"One Night", Artist: "Yuvraj" , Added: false },

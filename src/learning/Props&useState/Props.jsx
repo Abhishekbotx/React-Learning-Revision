@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import CardsProps from '../components/CardsProps'
+import CardsProps from '../../components/CardsProps'
 
 
 const data = [
