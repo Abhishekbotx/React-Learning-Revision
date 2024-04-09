@@ -5,6 +5,7 @@ const Nav = () => {
     return (
         <>
             <nav className='  flex gap-5 justify-center mt-5 font-mono  '>
+
                 <NavLink style={(e) => {
                     // console.log(e.isActive)
                     return { 
@@ -12,14 +13,19 @@ const Nav = () => {
                         fontWeight:e.isActive ?'bold':""
                  }
                 }} to="/">Home</NavLink>
+
+                {/* <NavLink to={'/courses'} style={(e)=>{
+                    return {color:e.isActive?'tomato':'',fontWeight:e.isActive?'bolder':''}
+                }}>Courses</NavLink> */}
+
                 <NavLink style={(e) => {
                     return { 
                         color: e.isActive ? 'tomato' : 'black',
                         fontWeight:e.isActive ?'bold':"" }
-                }} to="/About">About</NavLink>
+                }} to="/about">About</NavLink>
                 <NavLink className={(e)=>{
                     return[e.isActive?'text-red-400':"",e.isActive?'font-bold':""].join(' ');
-                }} to="/Users">Users</NavLink>
+                }} to="/users">Users</NavLink>
             </nav>
         </>
     )

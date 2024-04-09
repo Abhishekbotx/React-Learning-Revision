@@ -12,11 +12,11 @@ import FormControlledComponent from './learning/Form-handling/FormControlledComp
 import FormuseForm from './learning/Form-handling/FormuseForm'
 import FormProject from './learning/Form-handling/FormProject'
 import { Link,NavLink,Routes,Route} from 'react-router-dom'
-import Home from './learning/Routing/Home'
-import About from './learning/Routing/About'
-import Users from './learning/Routing/Users'
-import Nav from './learning/Routing/Nav'
-import Routing from './learning/Routing/Routing'
+import Home from './learning/Routing-Dynamic/Home'
+import About from './learning/Routing-Dynamic/About'
+import Users from './learning/Routing-Dynamic/Users'
+import Nav from './learning/Routing-Dynamic/Nav'
+import Routing from './learning/Routing-Dynamic/Routing'
 
 const App = () => {
 
