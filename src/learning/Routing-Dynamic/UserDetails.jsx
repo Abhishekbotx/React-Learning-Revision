@@ -1,10 +1,10 @@
 import React from 'react'
 import {useParams,useNavigate} from 'react-router-dom'
-//use Params for dynamic data
+//using Params for dynamic data from the parameter of the routes
 const UserDetails = () => {
     const navigate=useNavigate()
     const clickhandle=()=>{
-// navigate('/users')//will redirect to /users reactrouter-dom provides usenavigate for buttons
+// navigate('/users')//will redirect to /users reactrouter-dom provides useN avigate for buttons
         navigate(-1)//thil also works mean 1 peeche chle jao
     }
     const {name}=useParams()//the key here is->name we have given on routing page as /users/:name

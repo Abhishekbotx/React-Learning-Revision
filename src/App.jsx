@@ -17,6 +17,8 @@ import About from './learning/Routing-Dynamic/About'
 import Users from './learning/Routing-Dynamic/Users'
 import Nav from './learning/Routing-Dynamic/Nav'
 import Routing from './learning/Routing-Dynamic/Routing'
+import ApiTest from './learning/API & Useffect/ApiTest'
+import APIapp from './learning/API & Useffect/APIapp'
 
 const App = () => {
 
@@ -52,14 +54,17 @@ const App = () => {
     //   <FormProject></FormProject>
     // </div>
 
-    <>
-      <Nav></Nav>
+    // <>
+    //   <Nav></Nav>
       
 
-      <Routing></Routing>
-      {/* <Routes path='/About' element={About} ></Routes>
-      <Routes path='/Users' element={Users} ></Routes> */}
-    </>
+    //   <Routing></Routing>
+    //   {/* <Routes path='/About' element={About} ></Routes>
+    //   <Routes path='/Users' element={Users} ></Routes> */}
+    // </>
+
+
+    <APIapp></APIapp>
 
 
 

@@ -25,3 +25,13 @@ const Users = () => {
 }
 
 export default Users
+
+
+/*
+  Inside component we are 
+  creating some Links {like a tag in html}
+
+  then again this to {} path will be routed with separate route in the routing component ,
+  E.g:  <Route path='/users' element={<Users/>}/>
+        <Route path='/users/:name' element={<UserDetails/>}/>
+*/

@@ -14,7 +14,7 @@ const Routing = () => {
   return (
     <>
     <Routes>
-        <Route path='/' element={<Home/>}>Home</Route>
+        <Route path='/' element={<Home/>}></Route>
         <Route path='/about' element={<About />}> {/* parent route */}
           <Route path='readmore' element={<ReadMore />} /> {/* Nested route/child route */}
         </Route>

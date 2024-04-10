@@ -21,3 +21,6 @@
                 i.Link
                 ii.NavLink :•This offers Styling {both components are part of react-router-dom}
                             •learnt styling using different ways
+7. Learnt about Dynamic Routing   
+
+8. Learnt API Handling in react & inner working and Lifecycle of useEffect via small                      projects                            
