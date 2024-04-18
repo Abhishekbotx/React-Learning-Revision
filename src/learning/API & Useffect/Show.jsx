@@ -1,15 +1,15 @@
 import React,{useState} from 'react'
 import {Link,NavLink} from 'react-router-dom'
-import axios from 'axios';
+import axios from '../API & Useffect/utils/axios'
 import { useEffect } from 'react';
 const Show = () => {
-    const url = "https://fakestoreapi.com/products";
+    const url = "/products";
 
     const [products, setproducts] = useState([])
 
     const getProducts = async () => {
         try {
-            const api = await axios.get(url)
+            const api = await axios.get(url) 
             console.log(api.data)
             setproducts(api.data)
         } catch (error) {

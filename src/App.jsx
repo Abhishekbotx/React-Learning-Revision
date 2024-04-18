@@ -19,6 +19,8 @@ import Nav from './learning/Routing-Dynamic/Nav'
 import Routing from './learning/Routing-Dynamic/Routing'
 import ApiTest from './learning/API & Useffect/ApiTest'
 import APIapp from './learning/API & Useffect/APIapp'
+import PJX from './Project/PJX'
+import CardsProps from './components/CardsProps'
 
 const App = () => {
 
@@ -36,9 +38,9 @@ const App = () => {
     // </div>
 
 
-    // <div className=' bg-slate-900 h-screen w-full '>
-    //   <FormuseRef></FormuseRef>
-    // </div>
+    <div className=' bg-slate-900 h-screen w-full '>
+      <FormuseRef></FormuseRef>
+    </div>
 
 
     // <div className='  '>
@@ -64,10 +66,13 @@ const App = () => {
     // </>
 
 
-    <APIapp></APIapp>
+    // <APIapp></APIapp>
+    // <CardsProps></CardsProps>
+
+    // <PJX></PJX>
 
 
-
+    // <UseStateBG></UseStateBG>
 
 
 

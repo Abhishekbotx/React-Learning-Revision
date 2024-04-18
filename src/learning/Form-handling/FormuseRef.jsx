@@ -5,6 +5,8 @@ function FormuseRef() {
     const age=useRef(null)
     const handleclick=(event)=>{
         event.preventDefault();
+        console.log(name)
+        // console.log(name.current)
 
         console.log('name:age',name.current.value,'age:',age.current.value)
 
@@ -23,7 +25,7 @@ function FormuseRef() {
 export default FormuseRef
 
 /*
-useRef mein initially value null deni hoti hai kyuki useref pehle chlyta hai and tab tak
+useRef mein initially value null deni hoti hai kyuki useref pehle chlta hai and tab tak
 elements render nhi hote that's why initially null
 
 and useref wale object ko link krna hota hai ref property se tb hum uss 

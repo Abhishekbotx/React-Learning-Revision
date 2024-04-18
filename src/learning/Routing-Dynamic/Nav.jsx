@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 const Nav = () => {
     return (
         <>
-            <nav className='  flex gap-5 justify-center mt-5 font-mono  '>
+            <nav className='    '>
 
                 <NavLink style={(e) => {
                     // console.log(e.isActive)
