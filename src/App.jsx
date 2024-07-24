@@ -21,6 +21,10 @@ import ApiTest from './learning/API & Useffect/ApiTest'
 import APIapp from './learning/API & Useffect/APIapp'
 import PJX from './Project/PJX'
 import CardsProps from './components/CardsProps'
+import Carousel from './learning/Props&useState/Carousel'
+import LoanCompCard from './components/LoanCompCard'
+import Accordian from './components/Accordian'
+import SearchFilter from './learning/30Projects/SearchFilter'
 
 const App = () => {
 
@@ -38,9 +42,9 @@ const App = () => {
     // </div>
 
 
-    <div className=' bg-slate-900 h-screen w-full '>
-      <FormuseRef></FormuseRef>
-    </div>
+    // <div className=' bg-slate-900 h-screen w-full '>
+    //   <FormuseRef></FormuseRef>
+    // </div>
 
 
     // <div className='  '>
@@ -56,6 +60,10 @@ const App = () => {
     //   <FormProject></FormProject>
     // </div>
 
+
+
+
+
     // <>
     //   <Nav></Nav>
       
@@ -66,16 +74,25 @@ const App = () => {
     // </>
 
 
+
+
+
+
     // <APIapp></APIapp>
-    // <CardsProps></CardsProps>
 
     // <PJX></PJX>
 
 
     // <UseStateBG></UseStateBG>
 
-
-
+    // <>
+    // <Carousel></Carousel>
+    <div className=''>
+    {/* <LoanCompCard></LoanCompCard> */}
+    {/* <div>hello</div> */}
+    {/* <div className='bg-white'> <Accordian></Accordian> </div> */}
+    <SearchFilter></SearchFilter>
+    </div>
 
 
   )

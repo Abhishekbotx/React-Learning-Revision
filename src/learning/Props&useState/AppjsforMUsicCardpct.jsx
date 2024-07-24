@@ -32,7 +32,7 @@ function AppjsforMUsicCardpct() {
       </div>
       
     </div>
-    
+     
   )
 }
 

@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 const Nav = () => {
     return (
         <>
-            <nav className='    '>
+            <nav className=' flex justify-center gap-3    '>
 
                 <NavLink style={(e) => {
                     // console.log(e.isActive)
@@ -23,9 +23,9 @@ const Nav = () => {
                         color: e.isActive ? 'tomato' : 'black',
                         fontWeight:e.isActive ?'bold':"" }
                 }} to="/about">About</NavLink>
-                <NavLink className={(e)=>{
-                    return[e.isActive?'text-red-400':"",e.isActive?'font-bold':""].join(' ');
-                }} to="/users">Users</NavLink>
+                <NavLink 
+                className={(e)=>`${e.isActive?'text-red-400 font-extrabold  font-mono':'text-black'}`}
+                to="/users">Users</NavLink>
             </nav>
         </>
     )
@@ -33,6 +33,8 @@ const Nav = () => {
 
 export default Nav
 
+//🍁best way to style navlink⬇️
+//  className={(e)=>`${e.isActive?'text-red-400 font-extrabold  font-mono':'text-black'}`}
 
 /* 🍁style only works with Navlink; It accepts a callback;
     And also u need to return in curly braces 

@@ -19,13 +19,12 @@ const Nav = () => {
                 }}>Courses</NavLink> */}
 
                 <NavLink style={(e) => {
-                    return { 
-                        color: e.isActive ? 'tomato' : 'white',
-                        fontWeight:e.isActive ?'bold':"" }
+                    `color: e.isActive ? 'tomato' : 'white',
+                        fontWeight:e.isActive ?'bold':"" `
                 }} to="/service">Services</NavLink>
-                <NavLink className={(e)=>{
-                    return[e.isActive?'text-red-500':"text-white",e.isActive?'font-bold':""].join(' ');
-                }} to="/show">Show</NavLink>
+                <NavLink className={(e)=> `${e.isActive?'text-red-500 font-bold':"text-white"}`
+                    
+                } to="/show">Show</NavLink>
             </nav>
         </>
     )
