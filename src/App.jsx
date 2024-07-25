@@ -25,6 +25,13 @@ import Carousel from './learning/Props&useState/Carousel'
 import LoanCompCard from './components/LoanCompCard'
 import Accordian from './components/Accordian'
 import SearchFilter from './learning/30Projects/SearchFilter'
+import Pagination from './learning/30Projects/Pagination'
+import HamBurger from './learning/30Projects/HamBurger'
+import { ThemeProvider } from './learning/context/ThemeContext'
+import DarkTheme from './learning/30Projects/DarkTheme'
+import DarkComponent from './learning/30Projects/DarkComponent'
+import UseRefLearning from './learning/30Projects/UseRef'
+import PasswordGenerator from './learning/30Projects/PasswordGenerator'
 
 const App = () => {
 
@@ -91,7 +98,17 @@ const App = () => {
     {/* <LoanCompCard></LoanCompCard> */}
     {/* <div>hello</div> */}
     {/* <div className='bg-white'> <Accordian></Accordian> </div> */}
-    <SearchFilter></SearchFilter>
+    {/* <SearchFilter></SearchFilter> */}
+    {/* <Pagination></Pagination> */}
+    {/* <HamBurger></HamBurger>*/}
+     {/* <ThemeProvider>
+      <DarkTheme></DarkTheme>
+      <div>
+        <DarkComponent/>
+      </div>
+     </ThemeProvider> */}
+     {/* <UseRefLearning></UseRefLearning> */}
+     <PasswordGenerator></PasswordGenerator>
     </div>
 
 
