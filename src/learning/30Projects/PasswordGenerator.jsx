@@ -3,11 +3,11 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 const PasswordGenerator = () => {
     const [password, setPassword] = useState('')
     const [length, setLength] = useState(8)
-    const [numberAllowed, setNumberAllowed] = useState(true)
-    const [charAllowed, setCharAllowed] = useState(true)
+    const [numberAllowed, setNumberAllowed] = useState(false)
+    const [charAllowed, setCharAllowed] = useState(false)
     const passwordRef = useRef(null);
 
-    const copyToClipBoard=()=>{
+    const copyToClipBoard = () => {
         passwordRef.current?.select();
         window.navigator.clipboard.writeText(password)
     }
@@ -31,12 +31,27 @@ const PasswordGenerator = () => {
     }, [numberAllowed, charAllowed, length])
     useEffect(() => {
         passwordGenerator()
-    }, [numberAllowed, charAllowed, length, setPassword])
+    }, [numberAllowed, charAllowed, length, passwordGenerator])
     return (
-        <div className='w-full h-screen bg-slate-700  flex justify-center items-center'>
-            <input type="text" readOnly className='px-5 w-56 py-2 text-gray-800 outline-none ring-0 bg-white rounded-l-md text-2xl' ref={passwordRef} value={password}/>
-            <div onClick={copyToClipBoard} className='py-2 px-6 hover:cursor-pointer text-white bg-blue-400 uppercase rounded-r-md text-2xl'>copy</div>
+        <div className=' bg-slate-700 w-full h-screen flex flex-col justify-center'>
+            <div className='  flex justify-center items-center'>
+                <input type="text" readOnly className='px-5 w-56 py-2 text-gray-800 outline-none  bg-white rounded-l-md text-2xl' ref={passwordRef} value={password} />
+                <div onClick={copyToClipBoard} className='py-2 px-6 hover:cursor-pointer text-white bg-blue-400 uppercase rounded-r-md text-2xl'>copy</div>
+
+            </div>
+            <div className=' flex gap-x-5 justify-center mt-4'>
+                <div className='flex gap-x-4 items-center'>
+                    <input type="checkbox" onChange={()=>setCharAllowed(!charAllowed)} className='h-4 w-4  ' id='charAllow' />
+                    <label htmlFor="charAllow">Allow Character</label>
+                </div>
+                <div className='flex gap-x-4 items-center'>
+                    <input type="checkbox" onChange={()=>setNumberAllowed(!numberAllowed)} className='h-4 w-4  ' id='numberAllow' />
+                    <label htmlFor="numberAllow">Allow Numbers</label>
+                </div>
+            </div>
+
         </div>
+
     )
 }
 

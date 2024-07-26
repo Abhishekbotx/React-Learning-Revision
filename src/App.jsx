@@ -32,6 +32,10 @@ import DarkTheme from './learning/30Projects/DarkTheme'
 import DarkComponent from './learning/30Projects/DarkComponent'
 import UseRefLearning from './learning/30Projects/UseRef'
 import PasswordGenerator from './learning/30Projects/PasswordGenerator'
+import UseReducerLearning from './learning/30Projects/UseReducerLearning'
+import { CartProvider } from './learning/30Projects/CartContext'
+import AddToCart from './learning/30Projects/AddToCart'
+import CounterWithUseReducer from './learning/30Projects/CounterWithUseReducer'
 
 const App = () => {
 
@@ -108,7 +112,13 @@ const App = () => {
       </div>
      </ThemeProvider> */}
      {/* <UseRefLearning></UseRefLearning> */}
-     <PasswordGenerator></PasswordGenerator>
+     {/* <PasswordGenerator></PasswordGenerator> */}
+     {/* <UseReducerLearning></UseReducerLearning>
+      */}
+      {/* <CartProvider>
+        <AddToCart></AddToCart>
+      </CartProvider> */}
+      <CounterWithUseReducer></CounterWithUseReducer>
     </div>
 
 
